@@ -29,13 +29,13 @@ def calculate_optimal_price(a: float, b: float, c: float, tax_rate = 0.19) -> tu
     return optimal_price, net_profit
 
 
-def plot_profit_curve(a: float, b: float, c: float, opt_price: float, net_profit: float) -> None:
+def plot_profit_curve(a: float, b: float, c: float, opt_price: float, net_profit: float, tax_rate = 0.19) -> None:
     """
     Generates and displays a business plot of the profit function.
     """
     # Generowanie 100 punktów cenowych od 0 do dwukrotności ceny optymalnej
     prices = np.linspace(0, opt_price * 2, 100)
-    profits = a * (prices ** 2) + b * prices + c
+    profits = (a * (prices ** 2) + b * prices + c) * (1 - tax_rate)
 
     plt.figure(figsize=(10, 6))
     plt.plot(prices, profits, label='Profit Curve', color='#1f77b4', linewidth=2.5)
