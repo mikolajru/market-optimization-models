@@ -1,8 +1,8 @@
 def present_value_of_perpetuity_payments_in_advance (pmt: float, k: float) -> float:
     """
     Calculate the present value of perpetuity.
-    :param pmt (float): payment
-    :param k (float): discount rate
+    :param pmt: (float): payment
+    :param k:(float): discount rate
 
     Returns:
         Present value of perpetuity in case of payment in advance.
@@ -18,8 +18,8 @@ def present_value_of_perpetuity_payments_in_advance (pmt: float, k: float) -> fl
 def present_value_of_perpetuity_payments_in_arrears (pmt: float, k: float) -> float:
     """
         Calculate the present value of perpetuity.
-        :param pmt (float): payment
-        :param k (float): discount rate
+        :param pmt: (float): payment
+        :param k: (float): discount rate
 
         Returns:
             Present value of perpetuity in case of payment in arrears.
@@ -36,9 +36,9 @@ def present_value_of_perpetuity_payments_in_arrears (pmt: float, k: float) -> fl
 def optimal_payment_amount (pva: float, r: float, n: float) -> float:
     """
           Calculate the optimal price of payment in case of fixed interest rate.
-          :param pva (float): Present value of annuity
-          :param r (float): interest rate
-          :param n (float): number of periods
+          :param pva: (float): Present value of annuity
+          :param r: (float): interest rate
+          :param n: (float): number of periods
 
           Returns:
               Present value of perpetuity in case of payment in arrears.
